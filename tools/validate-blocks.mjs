@@ -7,7 +7,8 @@
  * content" and offers to recover it — but nothing warns you at build time, and
  * the front end looks fine. This does warn you.
  *
- * Needs a logged-in admin on a site running the theme.
+ * Needs Playwright (npm i -D playwright) and an admin login on a site running
+ * the theme.
  *
  *   WP_URL=http://example.test WP_USER=admin WP_PASS=secret \
  *     node tools/validate-blocks.mjs
