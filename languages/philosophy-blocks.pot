@@ -1,0 +1,414 @@
+# Copyright (C) 2026 Colorlib
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Philosophy Blocks 2.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/ColorlibHQ/philosophy/issues\n"
+"Last-Translator: Colorlib\n"
+"Language-Team: Colorlib\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-09-12T19:07:54+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: philosophy-blocks\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Philosophy Blocks"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://colorlib.com/wp/themes/philosophy/"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "The block edition of Philosophy. A masonry blog theme built for the Site Editor: every template, header, footer and section is blocks, and the design system lives in theme.json. Philosophy Blocks installs alongside the classic Philosophy theme, so a site can move across when it suits and switch back if it does not."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Colorlib"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://colorlib.com/"
+msgstr ""
+
+#: functions.php:136
+msgid "Philosophy"
+msgstr ""
+
+#: functions.php:137
+msgid "Sections from the Philosophy theme."
+msgstr ""
+
+#: inc/block-styles.php:23
+msgid "Pull quote"
+msgstr ""
+
+#: inc/block-styles.php:27
+msgid "Framed"
+msgstr ""
+
+#: inc/block-styles.php:31
+msgid "Asterisks"
+msgstr ""
+
+#: inc/block-styles.php:35
+msgid "Checked"
+msgstr ""
+
+#. translators: 1: the update host, 2: the list of values sent, 3: filter name.
+#: inc/updates.php:192
+#, php-format
+msgid "Philosophy Blocks checks %1$s for updates twice a day and sends %2$s. No personal data and no site name is sent, and the identifier is a one-way hash. Add the %3$s filter to switch it off."
+msgstr ""
+
+#: patterns/footer.php
+msgctxt "Pattern title"
+msgid "Footer"
+msgstr ""
+
+#: patterns/footer.php:21
+msgid "Popular posts"
+msgstr ""
+
+#: patterns/footer.php:31
+msgid "About"
+msgstr ""
+
+#: patterns/footer.php:35
+msgid "A sentence or two about the publication, the people behind it, and what a reader can expect to find here."
+msgstr ""
+
+#. translators: 1: current year, 2: opening anchor tag, 3: closing anchor tag.
+#: patterns/footer.php:59
+#, php-format
+msgid "Copyright &copy; %1$s All rights reserved. | This template is made with love by %2$sColorlib%3$s"
+msgstr ""
+
+#: patterns/header.php
+msgctxt "Pattern title"
+msgid "Header"
+msgstr ""
+
+#: patterns/header.php:26
+#: patterns/hidden-404.php:22
+#: patterns/hidden-no-results.php:22
+msgctxt "label"
+msgid "Search"
+msgstr ""
+
+#: patterns/header.php:26
+#: patterns/hidden-404.php:22
+#: patterns/hidden-no-results.php:22
+msgid "Type Keywords"
+msgstr ""
+
+#: patterns/header.php:26
+#: patterns/hidden-404.php:22
+#: patterns/hidden-no-results.php:22
+msgid "Search"
+msgstr ""
+
+#: patterns/hidden-404.php
+msgctxt "Pattern title"
+msgid "404 content"
+msgstr ""
+
+#: patterns/hidden-404.php:15
+msgid "Ooops 404 Error!"
+msgstr ""
+
+#: patterns/hidden-404.php:19
+msgid "Either something went wrong or the page doesn&rsquo;t exist anymore."
+msgstr ""
+
+#: patterns/hidden-404.php:27
+msgid "Go to the home page"
+msgstr ""
+
+#: patterns/hidden-featured.php
+msgctxt "Pattern title"
+msgid "Featured posts"
+msgstr ""
+
+#: patterns/hidden-featured.php:38
+msgid "Publish a post and it will appear here."
+msgstr ""
+
+#: patterns/hidden-masonry.php
+msgctxt "Pattern title"
+msgid "Masonry post grid"
+msgstr ""
+
+#: patterns/hidden-masonry.php:29
+msgid "Read More"
+msgstr ""
+
+#: patterns/hidden-masonry.php:41
+msgid "Newer Posts"
+msgstr ""
+
+#: patterns/hidden-masonry.php:43
+msgid "Older Posts"
+msgstr ""
+
+#: patterns/hidden-no-results.php
+msgctxt "Pattern title"
+msgid "No results"
+msgstr ""
+
+#: patterns/hidden-no-results.php:15
+msgid "Nothing found"
+msgstr ""
+
+#: patterns/hidden-no-results.php:19
+msgid "Nothing matched those terms. Try a different keyword, or start again from the home page."
+msgstr ""
+
+#: patterns/hidden-post-meta.php
+msgctxt "Pattern title"
+msgid "Post meta"
+msgstr ""
+
+#: patterns/hidden-post-meta.php:17
+msgctxt "between a date and a category name"
+msgid "in"
+msgstr ""
+
+#: patterns/info-blocks.php
+msgctxt "Pattern title"
+msgid "Info blocks"
+msgstr ""
+
+#: patterns/info-blocks.php:20
+msgid "Who we are"
+msgstr ""
+
+#: patterns/info-blocks.php:24
+msgid "A paragraph about the people behind the site."
+msgstr ""
+
+#: patterns/info-blocks.php:32
+msgid "What we do"
+msgstr ""
+
+#: patterns/info-blocks.php:36
+msgid "A paragraph about the work."
+msgstr ""
+
+#: theme.json
+#: styles/ink.json
+#: styles/paper.json
+msgctxt "Color name"
+msgid "Paper"
+msgstr ""
+
+#: theme.json
+#: styles/ink.json
+#: styles/paper.json
+msgctxt "Color name"
+msgid "Ink"
+msgstr ""
+
+#: theme.json
+#: styles/ink.json
+#: styles/paper.json
+msgctxt "Color name"
+msgid "Body text"
+msgstr ""
+
+#: theme.json
+#: styles/ink.json
+#: styles/paper.json
+msgctxt "Color name"
+msgid "Muted"
+msgstr ""
+
+#: theme.json
+#: styles/ink.json
+#: styles/paper.json
+msgctxt "Color name"
+msgid "Subtle"
+msgstr ""
+
+#: theme.json
+#: styles/ink.json
+#: styles/paper.json
+msgctxt "Color name"
+msgid "Rule"
+msgstr ""
+
+#: theme.json
+#: styles/ink.json
+#: styles/paper.json
+msgctxt "Color name"
+msgid "Shade"
+msgstr ""
+
+#: theme.json
+#: styles/ink.json
+#: styles/paper.json
+msgctxt "Color name"
+msgid "Night"
+msgstr ""
+
+#: theme.json
+#: styles/ink.json
+#: styles/paper.json
+msgctxt "Color name"
+msgid "Footer"
+msgstr ""
+
+#: theme.json
+#: styles/ink.json
+#: styles/paper.json
+msgctxt "Color name"
+msgid "Accent"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Libre Baskerville"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Montserrat"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Huge"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Display"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "1"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "2"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "3"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "4"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "5"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "6"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "7"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page without title"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page with sidebar"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Post with sidebar"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Sidebar"
+msgstr ""
+
+#: styles/ink.json
+msgctxt "Style variation name"
+msgid "Ink"
+msgstr ""
+
+#: styles/ink.json
+msgctxt "Style variation description"
+msgid "The whole site on the dark ground the header already uses."
+msgstr ""
+
+#: styles/paper.json
+msgctxt "Style variation name"
+msgid "Paper"
+msgstr ""
+
+#: styles/paper.json
+msgctxt "Style variation description"
+msgid "Warmer stock and a quieter accent, for a site that is mostly long-form writing."
+msgstr ""
+
+#: styles/sans.json
+msgctxt "Style variation name"
+msgid "Sans"
+msgstr ""
+
+#: styles/sans.json
+msgctxt "Style variation description"
+msgid "Montserrat throughout, for a site that wants no serif at all."
+msgstr ""

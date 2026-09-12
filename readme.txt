@@ -1,0 +1,109 @@
+=== Philosophy Blocks ===
+
+Contributors: colorlib
+Requires at least: 6.6
+Tested up to: 7.1
+Requires PHP: 7.4
+Stable tag: 2.0.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, one-column, two-columns, block-patterns, block-styles, full-site-editing, custom-colors, custom-logo, custom-menu, editor-style, featured-images, style-variations, template-editing, threaded-comments, translation-ready, wide-blocks
+
+The block edition of Philosophy: a masonry blog theme for the Site Editor.
+
+== Description ==
+
+Philosophy Blocks is Philosophy rebuilt as a block theme. Every template, the
+header, the footer and each section are blocks, and the design system lives in
+theme.json, so the whole site is edited in one place: Appearance > Editor.
+
+It keeps what made Philosophy recognisable — the dark masthead, the featured
+panels, the masonry blog grid and the Libre Baskerville and Montserrat pairing —
+and expresses all of it with core blocks.
+
+* Fourteen block templates, including page and post layouts with a sidebar
+* A featured area driven by a Query Loop, so which posts appear is editable
+* A masonry post grid that degrades to a plain grid without JavaScript
+* Three style variations: Ink, Paper and Sans
+* Four block styles and a set of patterns for the sections
+* Self-hosted webfonts and a trimmed icon set: no third-party requests
+* Translation ready
+
+== Installation ==
+
+1. In your admin panel, go to Appearance > Themes and click Add New.
+2. Click Upload Theme, choose philosophy-blocks.zip, then Install Now.
+3. Click Activate, then go to Appearance > Editor to make it yours.
+
+== Frequently Asked Questions ==
+
+= I use the classic Philosophy theme. What happens to my site? =
+
+Nothing, until you choose. Philosophy Blocks is a separate theme with its own
+directory, so it installs alongside the classic Philosophy without touching it.
+Activating it switches your site over; switching back restores the classic theme
+and every one of its settings, which are untouched while you are away.
+
+= Where did the Customizer go? =
+
+WordPress hides the Customizer for block themes because everything it used to do
+is now in one editor. Colours, fonts and spacing are under Appearance > Editor >
+Styles. The header, footer and every template are under Templates and Patterns.
+
+= Where are the About and Contact page settings? =
+
+They are page content. Add a page, insert the Info blocks pattern, and edit it
+like the rest of the page. The classic theme kept that content in a Customizer
+repeater; this one does not need to.
+
+= How do I change which posts appear in the featured area? =
+
+Appearance > Editor > Templates > Blog Home, then select the Query Loop inside
+the featured section. Its filters are the standard Query Loop ones.
+
+= The masonry grid looks like a plain grid =
+
+The grid is rendered by the Query Loop and rebalanced into a masonry by a small
+script. If scripts are blocked you get the plain grid, which is a complete and
+correct layout on its own.
+
+== Changelog ==
+
+= 2.0.0 =
+* First release of the block edition.
+
+== Notes for maintainers ==
+
+Theme Check reports one REQUIRED item: the `Update URI` header. That rule is for
+themes *in* the WordPress.org directory, which must not carry it. This theme is
+distributed from colorlib.com, which is the case the header exists for. If it is
+ever submitted to the directory, drop the header and `inc/updates.php` together.
+
+`https://updates.colorlib.com/theme/philosophy-blocks.json` has to be published
+for update checks to report anything. Until it is, the check fails closed.
+
+== Copyright ==
+
+Philosophy Blocks WordPress Theme, Copyright 2018-2026 Colorlib
+Philosophy Blocks is distributed under the terms of the GNU GPL v2 or later.
+
+== Resources ==
+
+Font Awesome Free 7.3.1
+* Copyright Fonticons, Inc.
+* Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License
+* https://fontawesome.com/license/free
+* Bundled in assets/css/fontawesome/, trimmed by tools/build-fontawesome.mjs
+
+Libre Baskerville
+* Copyright Impallari Type
+* SIL Open Font License, 1.1
+* https://fonts.google.com/specimen/Libre+Baskerville
+
+Montserrat
+* Copyright The Montserrat Project Authors
+* SIL Open Font License, 1.1
+* https://fonts.google.com/specimen/Montserrat
+
+The theme ships no photographs. The images in screenshot.png are a rendering of
+the theme with demo content and are not part of the theme files.

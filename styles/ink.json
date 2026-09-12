@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Ink",
+	"description": "The whole site on the dark ground the header already uses.",
+	"settings": {
+		"color": {
+			"palette": [
+				{ "slug": "base", "color": "#0d0d0d", "name": "Paper" },
+				{ "slug": "contrast", "color": "#f5f5f5", "name": "Ink" },
+				{ "slug": "body", "color": "#b5b3b3", "name": "Body text" },
+				{ "slug": "muted", "color": "#8f8f8f", "name": "Muted" },
+				{ "slug": "subtle", "color": "#b5b3b3", "name": "Subtle" },
+				{ "slug": "rule", "color": "#2a2a2a", "name": "Rule" },
+				{ "slug": "shade", "color": "#171717", "name": "Shade" },
+				{ "slug": "night", "color": "#050505", "name": "Night" },
+				{ "slug": "footer", "color": "#050505", "name": "Footer" },
+				{ "slug": "accent", "color": "#7fb2ff", "name": "Accent" }
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"button": {
+				"color": { "background": "#f5f5f5", "text": "#0d0d0d" },
+				":hover": { "color": { "background": "#7fb2ff", "text": "#0d0d0d" } }
+			}
+		}
+	}
+}
