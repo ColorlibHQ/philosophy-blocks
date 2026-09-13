@@ -15,8 +15,8 @@
  */
 
 ?>
-<!-- wp:group {"className":"philosophy-featured","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|70"}}},"backgroundColor":"night","textColor":"inverse","layout":{"type":"constrained","contentSize":"1100px"}} -->
-<div class="wp-block-group philosophy-featured has-inverse-color has-night-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--70)">
+<!-- wp:group {"className":"philosophy-featured","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|70"},"margin":{"top":"0"}}},"backgroundColor":"night","textColor":"inverse","layout":{"type":"constrained","contentSize":"1100px"}} -->
+<div class="wp-block-group philosophy-featured has-inverse-color has-night-background-color has-text-color has-background" style="margin-top:0;padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--70)">
 	<!-- wp:query {"queryId":10,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":false,"sticky":"exclude"},"className":"philosophy-featured__query","layout":{"type":"default"}} -->
 	<div class="wp-block-query philosophy-featured__query">
 		<!-- wp:post-template {"className":"philosophy-featured__list","layout":{"type":"grid","columnCount":2}} -->
