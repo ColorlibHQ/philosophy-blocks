@@ -34,6 +34,11 @@
 					"name": "Muted"
 				},
 				{
+					"slug": "inverse",
+					"color": "#ffffff",
+					"name": "On dark"
+				},
+				{
 					"slug": "subtle",
 					"color": "#b5b3b3",
 					"name": "Subtle"

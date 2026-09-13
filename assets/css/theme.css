@@ -127,7 +127,7 @@
 .philosophy-header :focus-visible,
 .philosophy-footer :focus-visible,
 .philosophy-featured :focus-visible {
-	outline: 2px solid var(--wp--preset--color--base);
+	outline: 2px solid var(--wp--preset--color--inverse);
 	outline-offset: 2px;
 }
 

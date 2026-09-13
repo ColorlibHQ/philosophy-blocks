@@ -6,16 +6,61 @@
 	"settings": {
 		"color": {
 			"palette": [
-				{ "slug": "base", "color": "#fbf9f4", "name": "Paper" },
-				{ "slug": "contrast", "color": "#20201d", "name": "Ink" },
-				{ "slug": "body", "color": "#5f5c54", "name": "Body text" },
-				{ "slug": "muted", "color": "#737067", "name": "Muted" },
-				{ "slug": "subtle", "color": "#c3bfb4", "name": "Subtle" },
-				{ "slug": "rule", "color": "#e5e0d5", "name": "Rule" },
-				{ "slug": "shade", "color": "#f3efe6", "name": "Shade" },
-				{ "slug": "night", "color": "#20201d", "name": "Night" },
-				{ "slug": "footer", "color": "#20201d", "name": "Footer" },
-				{ "slug": "accent", "color": "#8a5a2b", "name": "Accent" }
+				{
+					"slug": "base",
+					"color": "#fbf9f4",
+					"name": "Paper"
+				},
+				{
+					"slug": "contrast",
+					"color": "#20201d",
+					"name": "Ink"
+				},
+				{
+					"slug": "body",
+					"color": "#5f5c54",
+					"name": "Body text"
+				},
+				{
+					"slug": "muted",
+					"color": "#737067",
+					"name": "Muted"
+				},
+				{
+					"slug": "inverse",
+					"color": "#fbf9f4",
+					"name": "On dark"
+				},
+				{
+					"slug": "subtle",
+					"color": "#c3bfb4",
+					"name": "Subtle"
+				},
+				{
+					"slug": "rule",
+					"color": "#e5e0d5",
+					"name": "Rule"
+				},
+				{
+					"slug": "shade",
+					"color": "#f3efe6",
+					"name": "Shade"
+				},
+				{
+					"slug": "night",
+					"color": "#20201d",
+					"name": "Night"
+				},
+				{
+					"slug": "footer",
+					"color": "#20201d",
+					"name": "Footer"
+				},
+				{
+					"slug": "accent",
+					"color": "#8a5a2b",
+					"name": "Accent"
+				}
 			]
 		}
 	}
