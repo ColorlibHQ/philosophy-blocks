@@ -31,7 +31,7 @@
 	<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--40)">
 		<!-- wp:site-logo {"width":220} /-->
 
-		<!-- wp:site-title {"textAlign":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|inverse"}}}},"textColor":"inverse"} /-->
+		<!-- wp:site-title {"level":0,"textAlign":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|inverse"}}}},"textColor":"inverse"} /-->
 
 		<!-- wp:site-tagline {"textAlign":"center","textColor":"subtle","fontFamily":"sans","fontSize":"small"} /-->
 	</div>

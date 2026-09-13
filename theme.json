@@ -484,7 +484,9 @@
 				"typography": {
 					"fontFamily": "var:preset|font-family|serif",
 					"fontSize": "var:preset|font-size|xx-large",
-					"fontWeight": "700"
+					"fontWeight": "700",
+					"lineHeight": "1.25",
+					"letterSpacing": "-0.1rem"
 				}
 			},
 			"core/navigation": {
