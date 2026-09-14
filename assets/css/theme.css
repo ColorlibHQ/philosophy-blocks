@@ -57,23 +57,67 @@
 	text-decoration: underline;
 }
 
+/* The category reads as a solid chip, the two colours the design has always
+ * used -- deepened from #01aef0 and #679a23, which are 2.5:1 and 3.4:1 behind
+ * a white label. */
 .philosophy-featured__panel .wp-block-post-terms a {
-	font-weight: 600;
-	letter-spacing: 0.16rem;
+	background-color: #547d1d;
+	color: var(--wp--preset--color--inverse);
+	display: inline-block;
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	line-height: 24px;
+	padding: 0 15px;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 
-/* The first panel takes both rows, which is the layout Philosophy has always
- * had: one large story beside two smaller ones. */
+.philosophy-featured__list > li:first-child .philosophy-featured__panel .wp-block-post-terms a {
+	background-color: #017aa9;
+}
+
+.philosophy-featured__panel .wp-block-post-terms a:hover,
+.philosophy-featured__panel .wp-block-post-terms a:focus {
+	text-decoration: underline;
+}
+
+/* The byline sits back from the title, as it does in the design. */
+.philosophy-featured__panel .wp-block-post-author-name,
+.philosophy-featured__panel .wp-block-post-author-name a,
+.philosophy-featured__panel .wp-block-post-date {
+	color: rgba(255, 255, 255, 0.65);
+}
+
+/* Author and date are separated by a bullet, as in the design. The group is a
+ * flex row, so the bullet goes on the author rather than between two nodes. */
+.philosophy-featured__panel .wp-block-post-author-name::after {
+	content: "\2022";
+	margin-left: 0.7em;
+}
+
+/* One large story beside two smaller ones, two thirds to one, and no gutter
+ * between them -- the proportions the design has always had. */
 @media (min-width: 782px) {
-	.philosophy-featured__list {
+	.philosophy-featured .philosophy-featured__list {
+		gap: 0;
+		grid-template-columns: 2fr 1fr;
 		grid-template-rows: repeat(2, 1fr);
 	}
 
 	.philosophy-featured__list > li:first-child {
 		grid-row: span 2;
 	}
+
+	/* The story that fills the tall cell carries the larger title. */
+	.philosophy-featured__list > li:not(:first-child) .wp-block-post-title {
+		font-size: 20px;
+	}
+}
+
+.philosophy-featured__panel .wp-block-post-title {
+	font-size: var(--wp--preset--font-size--display);
+	line-height: 1.333;
 }
 
 /* A cover sizes itself to its own min-height, so the tall first cell would
@@ -258,6 +302,20 @@
 
 .philosophy-header__search .wp-block-search__input::placeholder {
 	color: rgba(255, 255, 255, 0.5);
+}
+
+/* The current section is the white one; everything else sits back. At 60%
+ * white over the masthead that is 7:1, so it is still comfortably AA. */
+.philosophy-header .wp-block-navigation a.wp-block-navigation-item__content {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.philosophy-header .wp-block-navigation .current-menu-item > a.wp-block-navigation-item__content,
+.philosophy-header .wp-block-navigation .current-menu-ancestor > a.wp-block-navigation-item__content,
+.philosophy-header .wp-block-navigation .current-menu-parent > a.wp-block-navigation-item__content,
+.philosophy-header .wp-block-navigation a.wp-block-navigation-item__content:hover,
+.philosophy-header .wp-block-navigation a.wp-block-navigation-item__content:focus {
+	color: #ffffff;
 }
 
 .philosophy-header .wp-block-navigation a:hover,
