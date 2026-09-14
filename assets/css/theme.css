@@ -159,6 +159,16 @@
 	width: 120px;
 }
 
+/* theme.json colours separators with `rule`, which is right on the light page
+ * ground and far too loud on the dark footer -- it was landing as 2px of
+ * #e5e5e5. This is the same hairline the footer headings carry. */
+.philosophy-footer .wp-block-separator {
+	border-bottom-width: 1px;
+	border-color: rgba(255, 255, 255, 0.1);
+	color: rgba(255, 255, 255, 0.1);
+	opacity: 1;
+}
+
 .philosophy-footer ul {
 	list-style: none;
 	margin: 0;
