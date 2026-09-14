@@ -177,9 +177,107 @@
 		} );
 	};
 
+	/**
+	 * Turns the header's search block into the design's full-page overlay.
+	 *
+	 * Progressive enhancement: the block renders an ordinary inline search form,
+	 * which works on its own. This replaces it with a labelled trigger and moves
+	 * the form into an overlay, so nothing is hidden that the script might then
+	 * fail to reveal.
+	 */
+	var initSearch = function () {
+		var l10n = window.philosophyBlocksL10n || {};
+		var wrap = document.querySelector( '.philosophy-header__search' );
+
+		if ( ! wrap || wrap.dataset.philosophyOverlay ) {
+			return;
+		}
+
+		// core/search renders the form as the wrapper itself, not inside it.
+		var form = 'FORM' === wrap.tagName ? wrap : wrap.querySelector( 'form' );
+		var field = wrap.querySelector( 'input[type="search"]' );
+
+		if ( ! form || ! field ) {
+			return;
+		}
+
+		wrap.dataset.philosophyOverlay = 'true';
+
+		var trigger = document.createElement( 'button' );
+		trigger.type = 'button';
+		trigger.className = 'philosophy-search__trigger';
+		trigger.setAttribute( 'aria-expanded', 'false' );
+		trigger.setAttribute( 'aria-controls', 'philosophy-search' );
+		trigger.textContent = l10n.search || 'Search';
+
+		var overlay = document.createElement( 'div' );
+		overlay.className = 'philosophy-search';
+		overlay.id = 'philosophy-search';
+
+		var close = document.createElement( 'button' );
+		close.type = 'button';
+		close.className = 'philosophy-search__close';
+		close.setAttribute( 'aria-label', l10n.closeSearch || 'Close the search form' );
+		close.innerHTML = '<span aria-hidden="true">&times;</span>';
+
+		var hint = document.createElement( 'p' );
+		hint.className = 'philosophy-search__hint';
+		hint.textContent = l10n.hint || '';
+
+		wrap.parentNode.insertBefore( trigger, wrap );
+		overlay.appendChild( close );
+		overlay.appendChild( wrap );
+		wrap.appendChild( hint );
+		document.body.appendChild( overlay );
+
+		var body = document.body;
+
+		var open = function () {
+			body.classList.add( 'philosophy-search-is-open' );
+			trigger.setAttribute( 'aria-expanded', 'true' );
+
+			window.setTimeout( function () {
+				field.focus();
+			}, 100 );
+		};
+
+		var hide = function ( refocus ) {
+			if ( ! body.classList.contains( 'philosophy-search-is-open' ) ) {
+				return;
+			}
+
+			body.classList.remove( 'philosophy-search-is-open' );
+			trigger.setAttribute( 'aria-expanded', 'false' );
+			field.blur();
+
+			if ( refocus ) {
+				trigger.focus();
+			}
+		};
+
+		trigger.addEventListener( 'click', open );
+		close.addEventListener( 'click', function () {
+			hide( true );
+		} );
+
+		// The backdrop closes; the form itself does not.
+		overlay.addEventListener( 'click', function ( event ) {
+			if ( ! event.target.closest( 'form' ) && ! event.target.closest( '.philosophy-search__close' ) ) {
+				hide( true );
+			}
+		} );
+
+		document.addEventListener( 'keydown', function ( event ) {
+			if ( 'Escape' === event.key ) {
+				hide( true );
+			}
+		} );
+	};
+
 	var init = function () {
 		initMasonry();
 		initReveal();
+		initSearch();
 	};
 
 	if ( 'loading' === document.readyState ) {

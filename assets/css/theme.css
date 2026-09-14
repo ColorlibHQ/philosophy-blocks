@@ -323,21 +323,27 @@
 	display: none;
 }
 
-/* The search control is labelled, as the design has it, with the magnifier
- * beside the word rather than instead of it. */
-.philosophy-header__search .wp-block-search__button {
+/* ===================================================================
+ * # search
+ *
+ *   The block renders an ordinary inline form, which works on its own. The
+ *   script replaces it with the trigger below and moves the form into a
+ *   full-page overlay, so nothing here hides anything until that has run.
+ * ------------------------------------------------------------------- */
+.philosophy-search__trigger {
 	background: none;
 	border: 0;
 	color: inherit;
+	cursor: pointer;
 	font-family: var(--wp--preset--font-family--sans);
 	font-size: 12px;
 	font-weight: 600;
 	letter-spacing: 2px;
-	padding: 0 0 0 0.6rem;
+	padding: 0;
 	text-transform: uppercase;
 }
 
-.philosophy-header__search .wp-block-search__button::after {
+.philosophy-search__trigger::after {
 	content: "\f002";
 	font-family: "Font Awesome 7 Free";
 	font-size: 15px;
@@ -347,7 +353,105 @@
 	vertical-align: -0.1em;
 }
 
-.philosophy-header__search .wp-block-search__input {
+.philosophy-search {
+	background: var(--wp--preset--color--night);
+	inset: 0;
+	opacity: 0;
+	position: fixed;
+	text-align: center;
+	transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+	visibility: hidden;
+	z-index: 900;
+}
+
+.philosophy-search-is-open {
+	overflow: hidden;
+}
+
+.philosophy-search-is-open .philosophy-search {
+	opacity: 1;
+	visibility: visible;
+}
+
+.philosophy-search__close {
+	background: none;
+	border: 0;
+	color: var(--wp--preset--color--inverse);
+	cursor: pointer;
+	font-size: 32px;
+	left: 50%;
+	line-height: 1;
+	padding: 1rem;
+	position: absolute;
+	top: 1.5rem;
+	transform: translateX(-50%);
+}
+
+.philosophy-search .philosophy-header__search {
+	left: 50%;
+	max-width: 680px;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: calc(100% - 4rem);
+}
+
+.philosophy-search .wp-block-search__label {
+	color: var(--wp--preset--color--inverse);
+	font-family: var(--wp--preset--font-family--sans);
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.philosophy-search .wp-block-search__input {
+	background-color: transparent;
+	border: 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+	color: var(--wp--preset--color--inverse);
+	font-family: var(--wp--preset--font-family--sans);
+	font-size: 60px;
+	font-weight: 600;
+	line-height: 1.5;
+	padding: 0.6rem 0;
+	text-align: center;
+	width: 100%;
+}
+
+.philosophy-search .wp-block-search__input::placeholder {
+	color: rgba(255, 255, 255, 0.4);
+}
+
+/* The field is the only focusable thing in the overlay and it is focused on
+ * open, so the browser's ring is noise; the rule brightening is the indicator. */
+.philosophy-search .wp-block-search__input:focus {
+	border-bottom-color: rgba(255, 255, 255, 0.6);
+	outline: none;
+}
+
+/* Enter submits; the button is redundant once the field fills the screen. */
+.philosophy-search .wp-block-search__button {
+	display: none;
+}
+
+.philosophy-search__hint {
+	color: rgba(255, 255, 255, 0.5);
+	font-family: var(--wp--preset--font-family--sans);
+	font-size: 16px;
+	letter-spacing: 0.6px;
+	margin-top: 3rem;
+	text-align: center;
+}
+
+@media (max-width: 781px) {
+	.philosophy-search .wp-block-search__input {
+		font-size: 32px;
+	}
+}
+
+/* Before the script runs, the inline form is the search. Scoped to the header
+ * because the script moves the same form into the overlay, where it would
+ * otherwise win on source order and reset the colour to inherit. */
+.philosophy-header .philosophy-header__search .wp-block-search__input {
 	background-color: transparent;
 	border: 0;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.25);
@@ -355,7 +459,7 @@
 	padding: 0.4rem 0;
 }
 
-.philosophy-header__search .wp-block-search__input::placeholder {
+.philosophy-header .philosophy-header__search .wp-block-search__input::placeholder {
 	color: rgba(255, 255, 255, 0.5);
 }
 

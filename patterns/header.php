@@ -33,7 +33,7 @@
 		</div>
 		<!-- /wp:group -->
 
-		<!-- wp:search {"label":"<?php echo esc_attr_x( 'Search', 'label', 'philosophy-blocks' ); ?>","showLabel":false,"placeholder":"<?php echo esc_attr__( 'Type Keywords', 'philosophy-blocks' ); ?>","widthUnit":"px","buttonText":"<?php echo esc_attr__( 'Search', 'philosophy-blocks' ); ?>","buttonPosition":"button-only","className":"philosophy-header__search"} /-->
+		<!-- wp:search {"label":"<?php echo esc_attr_x( 'Search for:', 'label', 'philosophy-blocks' ); ?>","showLabel":true,"placeholder":"<?php echo esc_attr__( 'Type Keywords', 'philosophy-blocks' ); ?>","widthUnit":"px","buttonText":"<?php echo esc_attr__( 'Search', 'philosophy-blocks' ); ?>","buttonPosition":"no-button","className":"philosophy-header__search"} /-->
 	</div>
 	<!-- /wp:group -->
 

@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) || exit;
 
 if ( ! defined( 'PHILOSOPHY_BLOCKS_VERSION' ) ) {
 	$philosophy_blocks_theme = wp_get_theme( get_template() );
-	define( 'PHILOSOPHY_BLOCKS_VERSION', $philosophy_blocks_theme->get( 'Version' ) ? $philosophy_blocks_theme->get( 'Version' ) : '2.0.3' );
+	define( 'PHILOSOPHY_BLOCKS_VERSION', $philosophy_blocks_theme->get( 'Version' ) ? $philosophy_blocks_theme->get( 'Version' ) : '2.0.7' );
 	unset( $philosophy_blocks_theme );
 }
 
@@ -101,6 +101,18 @@ function philosophy_blocks_assets() {
 		array(),
 		PHILOSOPHY_BLOCKS_VERSION,
 		true
+	);
+
+	// The search overlay is built in the browser, so its strings have to reach
+	// it from here rather than being written into the script.
+	wp_localize_script(
+		'philosophy-blocks-scripts',
+		'philosophyBlocksL10n',
+		array(
+			'search'      => __( 'Search', 'philosophy-blocks' ),
+			'closeSearch' => __( 'Close the search form', 'philosophy-blocks' ),
+			'hint'        => __( 'Press Enter to begin your search.', 'philosophy-blocks' ),
+		)
 	);
 }
 add_action( 'wp_enqueue_scripts', 'philosophy_blocks_assets' );
