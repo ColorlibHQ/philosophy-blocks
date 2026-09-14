@@ -6,6 +6,9 @@
  * Block Types: core/template-part/footer
  * Inserter: no
  *
+ * Four columns on the dark ground, then the credit line -- the same shape the
+ * classic theme builds from its four footer widget areas.
+ *
  * @package Philosophy_Blocks
  */
 
@@ -15,24 +18,44 @@
 
 	<!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|50","left":"var:preset|spacing|60"}}}} -->
 	<div class="wp-block-columns">
-		<!-- wp:column {"width":"50%"} -->
-		<div class="wp-block-column" style="flex-basis:50%">
-			<!-- wp:heading {"level":2,"textColor":"inverse","fontSize":"x-small"} -->
-			<h2 class="wp-block-heading has-inverse-color has-text-color has-x-small-font-size"><?php echo esc_html__( 'Popular posts', 'philosophy-blocks' ); ?></h2>
+		<!-- wp:column {"width":"20%"} -->
+		<div class="wp-block-column" style="flex-basis:20%">
+			<!-- wp:heading {"level":2,"className":"philosophy-footer__title","textColor":"inverse"} -->
+			<h2 class="wp-block-heading philosophy-footer__title has-inverse-color has-text-color"><?php echo esc_html__( 'Subjects', 'philosophy-blocks' ); ?></h2>
 			<!-- /wp:heading -->
 
-			<!-- wp:latest-posts {"postsToShow":3,"displayPostDate":true,"displayFeaturedImage":true,"featuredImageAlign":"left","featuredImageSizeWidth":70,"featuredImageSizeHeight":70,"style":{"elements":{"link":{"color":{"text":"var:preset|color|inverse"}}}},"textColor":"inverse"} /-->
+			<!-- wp:categories {"showHierarchy":false,"showPostCounts":false,"style":{"elements":{"link":{"color":{"text":"var:preset|color|subtle"}}}},"textColor":"subtle","fontFamily":"sans","fontSize":"small"} /-->
 		</div>
 		<!-- /wp:column -->
 
-		<!-- wp:column {"width":"50%"} -->
-		<div class="wp-block-column" style="flex-basis:50%">
-			<!-- wp:heading {"level":2,"textColor":"inverse","fontSize":"x-small"} -->
-			<h2 class="wp-block-heading has-inverse-color has-text-color has-x-small-font-size"><?php echo esc_html__( 'About', 'philosophy-blocks' ); ?></h2>
+		<!-- wp:column {"width":"20%"} -->
+		<div class="wp-block-column" style="flex-basis:20%">
+			<!-- wp:heading {"level":2,"className":"philosophy-footer__title","textColor":"inverse"} -->
+			<h2 class="wp-block-heading philosophy-footer__title has-inverse-color has-text-color"><?php echo esc_html__( 'Archive', 'philosophy-blocks' ); ?></h2>
 			<!-- /wp:heading -->
 
-			<!-- wp:paragraph {"textColor":"subtle","fontSize":"small"} -->
-			<p class="has-subtle-color has-text-color has-small-font-size"><?php echo esc_html__( 'A sentence or two about the publication, the people behind it, and what a reader can expect to find here.', 'philosophy-blocks' ); ?></p>
+			<!-- wp:archives {"showPostCounts":false,"style":{"elements":{"link":{"color":{"text":"var:preset|color|subtle"}}}},"textColor":"subtle","fontFamily":"sans","fontSize":"small"} /-->
+		</div>
+		<!-- /wp:column -->
+
+		<!-- wp:column {"width":"20%"} -->
+		<div class="wp-block-column" style="flex-basis:20%">
+			<!-- wp:heading {"level":2,"className":"philosophy-footer__title","textColor":"inverse"} -->
+			<h2 class="wp-block-heading philosophy-footer__title has-inverse-color has-text-color"><?php echo esc_html__( 'Pages', 'philosophy-blocks' ); ?></h2>
+			<!-- /wp:heading -->
+
+			<!-- wp:page-list {"style":{"elements":{"link":{"color":{"text":"var:preset|color|subtle"}}}},"textColor":"subtle","fontFamily":"sans","fontSize":"small"} /-->
+		</div>
+		<!-- /wp:column -->
+
+		<!-- wp:column {"width":"40%"} -->
+		<div class="wp-block-column" style="flex-basis:40%">
+			<!-- wp:heading {"level":2,"className":"philosophy-footer__title","textColor":"inverse"} -->
+			<h2 class="wp-block-heading philosophy-footer__title has-inverse-color has-text-color"><?php echo esc_html__( 'Elsewhere', 'philosophy-blocks' ); ?></h2>
+			<!-- /wp:heading -->
+
+			<!-- wp:paragraph {"textColor":"subtle","fontFamily":"sans","fontSize":"small"} -->
+			<p class="has-subtle-color has-text-color has-sans-font-family has-small-font-size"><?php echo esc_html__( 'New photographs and notes go out here first. Follow along, or write and say hello.', 'philosophy-blocks' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:social-links {"iconColor":"inverse","iconColorValue":"#ffffff","className":"is-style-logos-only","layout":{"type":"flex"}} -->

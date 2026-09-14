@@ -37,10 +37,10 @@
 	<div style="height:var(--wp--preset--spacing--60)" aria-hidden="true" class="wp-block-spacer"></div>
 	<!-- /wp:spacer -->
 
-	<!-- wp:query-pagination {"paginationArrow":"arrow","layout":{"type":"flex","justifyContent":"space-between"}} -->
-		<!-- wp:query-pagination-previous {"label":"<?php echo esc_attr__( 'Newer Posts', 'philosophy-blocks' ); ?>","fontFamily":"sans","fontSize":"x-small"} /-->
+	<!-- wp:query-pagination {"paginationArrow":"arrow","layout":{"type":"flex","justifyContent":"center"}} -->
+		<!-- wp:query-pagination-previous {"label":"<?php echo esc_attr__( 'Newer Posts', 'philosophy-blocks' ); ?>","className":"philosophy-pagination__arrow"} /-->
 		<!-- wp:query-pagination-numbers /-->
-		<!-- wp:query-pagination-next {"label":"<?php echo esc_attr__( 'Older Posts', 'philosophy-blocks' ); ?>","fontFamily":"sans","fontSize":"x-small"} /-->
+		<!-- wp:query-pagination-next {"label":"<?php echo esc_attr__( 'Older Posts', 'philosophy-blocks' ); ?>","className":"philosophy-pagination__arrow"} /-->
 	<!-- /wp:query-pagination -->
 
 	<!-- wp:query-no-results -->

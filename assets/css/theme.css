@@ -88,6 +88,157 @@
 }
 
 /* ===================================================================
+ * # footer and the band above it
+ *
+ *   Treatments the block supports API has no vocabulary for: the short rule
+ *   under a footer heading, the tag chips, and the pagination numbers. The
+ *   values are the classic theme's, so the two editions match.
+ * ------------------------------------------------------------------- */
+.philosophy-footer__title {
+	font-family: var(--wp--preset--font-family--sans);
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 2.5px;
+	line-height: 1.286;
+	margin-bottom: 30px;
+	position: relative;
+	text-transform: uppercase;
+}
+
+.philosophy-footer__title::after {
+	background-color: rgba(255, 255, 255, 0.1);
+	bottom: -15px;
+	content: "";
+	height: 1px;
+	left: 0;
+	position: absolute;
+	width: 120px;
+}
+
+.philosophy-footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.philosophy-footer li {
+	margin: 0 0 6px;
+}
+
+.philosophy-footer .wp-block-social-links li {
+	margin: 0;
+}
+
+/* The list of recent posts beside the note, 70px thumbnail and all. */
+.philosophy-extra__thumb img {
+	height: 70px;
+	object-fit: cover;
+	width: 70px;
+}
+
+.philosophy-extra__list .wp-block-post-title {
+	margin: 0;
+}
+
+.philosophy-extra__list .wp-block-post-title {
+	line-height: 1.4;
+}
+
+.philosophy-extra__list .wp-block-post-title a {
+	color: var(--wp--preset--color--contrast);
+	font-weight: 700;
+}
+
+.philosophy-extra__list .wp-block-post-title a:hover,
+.philosophy-extra__list .wp-block-post-title a:focus {
+	text-decoration: underline;
+}
+
+.philosophy-extra__tags a {
+	background: #e2e2e2;
+	border-radius: 3px;
+	color: #333333;
+	display: inline-block;
+	font-family: var(--wp--preset--font-family--sans);
+	font-weight: 800;
+	letter-spacing: 2px;
+	line-height: 36px;
+	margin: 0 12px 15px 0;
+	padding: 0 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.philosophy-extra__tags a:hover,
+.philosophy-extra__tags a:focus {
+	background: #151515;
+	color: #ffffff;
+}
+
+/* ===================================================================
+ * # pagination
+ * ------------------------------------------------------------------- */
+.philosophy-masonry .wp-block-query-pagination {
+	justify-content: center;
+	margin-top: var(--wp--preset--spacing--50);
+}
+
+.philosophy-masonry .wp-block-query-pagination-numbers {
+	margin: 0;
+}
+
+.philosophy-masonry .wp-block-query-pagination .page-numbers {
+	border-radius: 3px;
+	color: var(--wp--preset--color--contrast);
+	display: inline-block;
+	font-family: var(--wp--preset--font-family--sans);
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 24px;
+	margin: 3px 1.5px;
+	padding: 6px 12px;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+
+.philosophy-masonry .wp-block-query-pagination .page-numbers:hover {
+	background: #c4c4c4;
+}
+
+.philosophy-masonry .wp-block-query-pagination .page-numbers.current {
+	background: var(--wp--preset--color--contrast);
+	color: var(--wp--preset--color--base);
+}
+
+/* The arrows are circles either side of the numbers, as in the classic theme.
+ * font-size: 0 hides the label visually and leaves it as the link's accessible
+ * name -- the arrow glyph itself is aria-hidden, so it cannot supply one. */
+.philosophy-masonry .philosophy-pagination__arrow {
+	align-items: center;
+	border: 1px solid var(--wp--preset--color--rule);
+	border-radius: 50%;
+	display: inline-flex;
+	font-size: 0;
+	height: 40px;
+	justify-content: center;
+	padding: 0;
+	width: 40px;
+}
+
+.philosophy-masonry .philosophy-pagination__arrow .wp-block-query-pagination-previous-arrow,
+.philosophy-masonry .philosophy-pagination__arrow .wp-block-query-pagination-next-arrow {
+	font-size: 17px;
+	margin: 0;
+}
+
+.philosophy-masonry .philosophy-pagination__arrow:hover,
+.philosophy-masonry .philosophy-pagination__arrow:focus {
+	background: var(--wp--preset--color--contrast);
+	border-color: var(--wp--preset--color--contrast);
+	color: var(--wp--preset--color--base);
+}
+
+/* ===================================================================
  * # header
  * ------------------------------------------------------------------- */
 .philosophy-header__search .wp-block-search__button {
