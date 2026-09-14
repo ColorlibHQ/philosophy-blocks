@@ -18,7 +18,7 @@ header, the footer and each section are blocks, and the design system lives in
 theme.json, so the whole site is edited in one place: Appearance > Editor.
 
 It keeps what made Philosophy recognisable — the dark masthead, the featured
-panels, the masonry blog grid and the Libre Baskerville and Montserrat pairing —
+panels, the masonry blog grid and the Libre Baskerville and Metropolis pairing —
 and expresses all of it with core blocks.
 
 * Fourteen block templates, including page and post layouts with a sidebar
@@ -95,6 +95,11 @@ Font Awesome Free 7.3.1
 * https://fontawesome.com/license/free
 * Bundled in assets/css/fontawesome/, trimmed by tools/build-fontawesome.mjs
 
+Metropolis
+* Copyright Chris Simpson
+* The Unlicense (public domain)
+* https://github.com/dw5/Metropolis
+
 Libre Baskerville
 * Copyright Impallari Type
 * SIL Open Font License, 1.1
@@ -104,6 +109,7 @@ Montserrat
 * Copyright The Montserrat Project Authors
 * SIL Open Font License, 1.1
 * https://fonts.google.com/specimen/Montserrat
+* latin-ext only, as the fallback for the few letters Metropolis does not draw
 
 The theme ships no photographs. The images in screenshot.png are a rendering of
 the theme with demo content and are not part of the theme files.

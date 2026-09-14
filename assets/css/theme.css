@@ -17,9 +17,6 @@
  *   a masonry when it runs, and sets every positional property itself, so
  *   a stale copy of this file cannot break the page.
  * ------------------------------------------------------------------- */
-.philosophy-masonry__brick {
-	background-color: var(--wp--preset--color--base);
-}
 
 .philosophy-masonry__thumb img {
 	display: block;

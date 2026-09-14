@@ -2,15 +2,33 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 3,
 	"title": "Sans",
-	"description": "Montserrat throughout, for a site that wants no serif at all.",
+	"description": "Metropolis throughout, for a site that wants no serif at all.",
 	"styles": {
-		"typography": { "fontFamily": "var:preset|font-family|sans", "lineHeight": "1.8" },
+		"typography": {
+			"fontFamily": "var:preset|font-family|sans",
+			"lineHeight": "1.8"
+		},
 		"elements": {
-			"heading": { "typography": { "fontFamily": "var:preset|font-family|sans", "fontWeight": "600" } }
+			"heading": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|sans",
+					"fontWeight": "600"
+				}
+			}
 		},
 		"blocks": {
-			"core/post-title": { "typography": { "fontFamily": "var:preset|font-family|sans", "fontWeight": "600" } },
-			"core/site-title": { "typography": { "fontFamily": "var:preset|font-family|sans", "fontWeight": "600" } }
+			"core/post-title": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|sans",
+					"fontWeight": "600"
+				}
+			},
+			"core/site-title": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|sans",
+					"fontWeight": "600"
+				}
+			}
 		}
 	}
 }
