@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) || exit;
 
 if ( ! defined( 'PHILOSOPHY_BLOCKS_VERSION' ) ) {
 	$philosophy_blocks_theme = wp_get_theme( get_template() );
-	define( 'PHILOSOPHY_BLOCKS_VERSION', $philosophy_blocks_theme->get( 'Version' ) ? $philosophy_blocks_theme->get( 'Version' ) : '2.0.0' );
+	define( 'PHILOSOPHY_BLOCKS_VERSION', $philosophy_blocks_theme->get( 'Version' ) ? $philosophy_blocks_theme->get( 'Version' ) : '2.0.1' );
 	unset( $philosophy_blocks_theme );
 }
 
