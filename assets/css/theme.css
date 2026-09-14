@@ -308,6 +308,11 @@
 	.philosophy-header__top > :last-child {
 		justify-self: center;
 	}
+
+	/* A wordmark sized for a 1160px masthead fills a phone edge to edge. */
+	.philosophy-header__brand .wp-block-site-logo img {
+		max-width: 220px;
+	}
 }
 
 /* A site with a logo should not also print its name and tagline as text. The
