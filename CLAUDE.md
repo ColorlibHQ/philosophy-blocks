@@ -31,6 +31,21 @@ for what the block supports API has no vocabulary for: the masonry positioning,
 a few hover states, the header's search field. If a rule could be a theme.json
 value, make it one.
 
+**`defaultFontSizes` is false, and has to stay false.** WordPress ships its own
+small/medium/large/x-large presets and they win over a theme's entries with the
+same slugs, so with it left on, four of this theme's seven sizes were silently
+WordPress's — body copy at 20px instead of 16. The scale is stated in rem
+against a 16px root: 11 / 15 / 16 / 21 / 24 / 30 / 36px, the same steps the
+classic theme and the HTML template use.
+
+**The sans is Metropolis and the body copy is set in it**, with Libre
+Baskerville reserved for headings — the other way round is what made this read
+as a different theme from the classic edition. Montserrat is bundled latin-ext
+only, as the fallback for the letters Metropolis lacks; keep it in the stack.
+Do not fetch Libre Baskerville from the Google Fonts CSS API, which answers
+weight 400 and weight 700 with the same file and leaves every heading
+synthesised — `tools/build-fonts.mjs` uses Fontsource for that reason.
+
 **Never hand-write block markup from memory.** Block comment attributes have to
 match what the block's `save` produces exactly, or the editor shows "this block
 contains unexpected or invalid content" and offers to recover it. Two blocks in
