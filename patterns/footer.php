@@ -13,7 +13,7 @@
  */
 
 ?>
-<!-- wp:group {"className":"philosophy-footer","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|50"}}},"backgroundColor":"footer","textColor":"inverse","layout":{"type":"constrained","contentSize":"1100px"}} -->
+<!-- wp:group {"className":"philosophy-footer","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|50"}}},"backgroundColor":"footer","textColor":"inverse","layout":{"type":"constrained","contentSize":"1160px"}} -->
 <div class="wp-block-group philosophy-footer has-inverse-color has-footer-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--50)">
 
 	<!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|50","left":"var:preset|spacing|60"}}}} -->
