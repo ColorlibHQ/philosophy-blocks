@@ -4,7 +4,7 @@ Contributors: colorlib
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 2.0.0
+Stable tag: 2.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, one-column, two-columns, block-patterns, block-styles, full-site-editing, custom-colors, custom-logo, custom-menu, editor-style, featured-images, style-variations, template-editing, threaded-comments, translation-ready, wide-blocks
@@ -68,6 +68,31 @@ script. If scripts are blocked you get the plain grid, which is a complete and
 correct layout on its own.
 
 == Changelog ==
+
+= 2.1.0 =
+2.0.1 to 2.0.7 were version numbers used while iterating on the design; 2.1.0
+is the release that follows 2.0.0.
+
+* Fixed the Ink style variation, where the site title, navigation, featured
+  headlines and footer headings rendered black on black. A new inverse colour
+  keeps text on dark grounds light in every variation.
+* Fixed a 16px white seam between the masthead and the featured area.
+* Featured panel text stays legible over pale photographs: the panels use the
+  cover block's gradient overlay, and every line passes WCAG AA.
+* Every page has exactly one h1. The site title is a paragraph.
+* The block edition now matches the design and the classic theme: body copy in
+  the sans, the theme's own font sizes instead of WordPress's defaults,
+  Metropolis and a real Libre Baskerville Bold, and grid posts on white cards.
+* The front page ends as the design does, with centred pagination, a white band
+  carrying recent posts, a note and the tag cloud, and a four-column footer.
+* The featured area is one story at two thirds beside two at one third, with
+  solid category chips. The navigation dims and highlights the current section.
+* The masthead sits on one row, the page is 1160px wide, and a site with a logo
+  no longer also prints its name and tagline.
+* The header search opens a full-page overlay, as in the classic theme.
+* The wordmark is capped in size on phones.
+* The footer rule is a 1px line at 10% white instead of 2px of light grey.
+* Removed a MediaElement sprite the block theme never used.
 
 = 2.0.0 =
 * First release of the block edition.
