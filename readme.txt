@@ -4,7 +4,7 @@ Contributors: colorlib
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 2.1.0
+Stable tag: 2.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, one-column, two-columns, block-patterns, block-styles, full-site-editing, custom-colors, custom-logo, custom-menu, editor-style, featured-images, style-variations, template-editing, threaded-comments, translation-ready, wide-blocks
@@ -68,6 +68,10 @@ script. If scripts are blocked you get the plain grid, which is a complete and
 correct layout on its own.
 
 == Changelog ==
+
+
+= 2.1.1 =
+* Update requests no longer name the site. WordPress's default User-Agent carries the site address; the update check and core's package download to updates.colorlib.com now send only the theme and WordPress versions, so the one-way site identifier is the only thing that tells installs apart.
 
 = 2.1.0 =
 2.0.1 to 2.0.7 were version numbers used while iterating on the design; 2.1.0
